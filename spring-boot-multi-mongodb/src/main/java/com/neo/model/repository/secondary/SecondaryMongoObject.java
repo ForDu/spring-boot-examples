@@ -15,6 +15,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "second_mongo")
 public class SecondaryMongoObject {
 
+	public SecondaryMongoObject(String id,String value) {
+		this.id = id;
+		this.value = value;
+	}
+	
 	@Id
 	private String id;
 

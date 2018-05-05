@@ -14,6 +14,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @Document(collection = "first_mongo")
 public class PrimaryMongoObject {
+	
+	public PrimaryMongoObject(String id,String value) {
+		this.id = id;
+		this.value = value;
+	}
 
 	@Id
 	private String id;
